@@ -27,6 +27,7 @@ libvirtd_opts="-d -l"
 ```
 
 ```
+# 先忽略，如果有问题，请在配置文件里注释
 $ cat /etc/libvirt/libvirtd.conf
 listen_tls = 0
 listen_tcp = 1
