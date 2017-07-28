@@ -30,7 +30,7 @@ libvirtd_opts="-d -l"
 $ cat /etc/libvirt/libvirtd.conf
 listen_tls = 0
 listen_tcp = 1
-listen_addr = "172.17.42.1"  ## Address of docker0 veth on the host
+listen_addr = "127.0.0.1"  ## Address of docker0 veth on the host
 unix_sock_group = "libvirtd"
 unix_sock_ro_perms = "0777"
 unix_sock_rw_perms = "0770"
