@@ -1,6 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER Primiano Tucci <p.tucci@gmail.com>
-
+FROM debian:jessie
+MAINTAINER  <18001326539@163.com>
 RUN apt-get -y update && \
     apt-get -y install git python-pip python-libvirt python-libxml2 supervisor novnc
 
