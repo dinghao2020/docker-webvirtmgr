@@ -6,10 +6,11 @@
 2. Pull the image from Docker Hub
 
 ```
-$ docker pull ayaevil/docker-webvirtmgr
-$ sudo groupadd -g 1010 webvirtmgr
-$ sudo useradd -u 1010 -g webvirtmgr -s /sbin/nologin -d /data/vm webvirtmgr
-$ sudo chown -R webvirtmgr:webvirtmgr /data/vm
+docker pull ayaevil/docker-webvirtmgr
+sudo groupadd -g 1010 webvirtmgr
+sudo useradd -u 1010 -g webvirtmgr -s /sbin/nologin -d /data/vm webvirtmgr
+test -d /data/vm || sudo mkdir  -pv /data/vm
+sudo chown -R webvirtmgr:webvirtmgr /data/vm
 ```
 
 ### Usage
